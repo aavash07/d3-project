@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Task1Histogram from "./components/Task1Histogram";
+import Task2LBRComparison from "./components/Task2LBRComparison";
+import Task3TopShipClasses from "./components/Task3TopShipClasses";
+import Task4ScatterPlot from "./components/Task4ScatterPlot";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: "20px" }}>
+      <h1>Ship Data Visualization</h1>
+      <Task1Histogram />
+      <Task2LBRComparison />
+      <Task3TopShipClasses />
+      <Task4ScatterPlot />
     </div>
   );
-}
+};
 
 export default App;
